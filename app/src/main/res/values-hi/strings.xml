@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">संपर्क</string>
+    <string name="default_text">अभी तक कोई संपर्क नहीं.. जोड़ने के लिए बटन दबाएं</string>
+    <string name="entername_ca">अपना नाम दर्ज करें</string>
+    <string name="enterPhone_CA">अपना फोन दर्ज करें</string>
+    <string name="call_his">आप कॉल इतिहास</string>
+    <string name="settings">सेटटिंग</string>
+    <string name="help"><![CDATA[सहायता और प्रतिक्रिया]]></string>
+    <string name="spam">मार्क स्पैम</string>
+    <string name="share">साझा करना</string>
+    <string name="edit_contact">संपादित संपर्क</string>
+    <string name="block_contact">संपर्क को ब्लॉक करें</string>
+    <string name="send">टेक्स्ट मैसेज भेजें</string>
+    <string name="deleteFor">हमेशा के लिए हटाएं</string>
+    <string name="blk_ins">इसके बजाय ब्लॉक करें</string>
+    <string name="name_">नाम</string>
+    <string name="phone__">फ़ोन</string>
+    <string name="call_">कॉल</string>
+    <string name="text_">टेक्स्ट</string>
+    <string name="vid">वीडियो</string>
+    <string name="delete">हटाएं</string>
+    <string name="contact_details">संपर्क विवरण</string>
+    <string name="ok_tv">ठीक है</string>
+
+
+</resources>

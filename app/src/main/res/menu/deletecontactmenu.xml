@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/deleteP"
+        android:title="@string/deleteFor" />
+    <item
+        android:id="@+id/blockIns"
+        android:title="@string/blk_ins" />
+    <!--    <item android:id="@+id/" android:title="Block "/>-->
+</menu>

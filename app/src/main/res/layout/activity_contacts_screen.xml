@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsScreen">
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="142dp"
+        android:layout_height="135dp"
+        android:background="@drawable/rounded_textview"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="H"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:gravity="bottom|left"
+        android:text="@string/name_"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametv"
+        app:layout_constraintVertical_bias="0.0">
+        <!--call button-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/calling"
+                android:layout_width="63dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_call_24" />
+
+            <TextView
+                android:id="@+id/calltv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/call_"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </LinearLayout>
+        <!--text button-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/smsimg"
+                android:layout_width="63dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_sms_24" />
+
+            <TextView
+                android:id="@+id/smstv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/text_"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </LinearLayout>
+        <!--        video call -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/videoimg"
+                android:layout_width="63dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_video_call_24" />
+
+            <TextView
+                android:id="@+id/videotv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/vid"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+
+        <!--        Delete Contact -->
+        <LinearLayout
+            android:id="@+id/deletecontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/delete_contact"
+                android:layout_width="63dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+            <TextView
+                android:id="@+id/deletetv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
