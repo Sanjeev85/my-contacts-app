@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import java.util.*
 
 class contactsAdapter(private val context: Activity, private val arrayList: ArrayList<contacts>) :
@@ -17,13 +18,17 @@ class contactsAdapter(private val context: Activity, private val arrayList: Arra
         val view: View = inflater.inflate(R.layout.listitem, null)
 
 //        hooks
-        val firstChar: TextView = view.findViewById(R.id.profile)
+        val firstChar: TextView = view.findViewById(R.id.text)
         val name: TextView = view.findViewById(R.id.name)
         val phone: TextView = view.findViewById(R.id.phone)
+        val cardview: CardView = view.findViewById(R.id.profile)
+
 
 
         firstChar.text = arrayList[position].name.get(0).toString()
-//        firstChar.background.colorFilter = randomColor()
+
+        cardview.setCardBackgroundColor(randomColor())
+
         name.text = arrayList[position].name
         phone.text = arrayList[position].phoneNo
 
@@ -40,4 +45,6 @@ class contactsAdapter(private val context: Activity, private val arrayList: Arra
         )
         return color
     }
+
+
 }

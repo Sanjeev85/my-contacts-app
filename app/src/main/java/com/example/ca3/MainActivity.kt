@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
                         )
                     )
 //                  listview adapter
+                    listview.deferNotifyDataSetChanged()
+                    contactsArrayList.sortWith(compareBy<contacts> { it.name }.thenBy { it.phoneNo })
                     listview.adapter = contactsAdapter(this, contactsArrayList)
                     registerForContextMenu(listview)
 
