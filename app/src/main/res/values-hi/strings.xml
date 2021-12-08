@@ -23,6 +23,9 @@
     <string name="delete">हटाएं</string>
     <string name="contact_details">संपर्क विवरण</string>
     <string name="ok_tv">ठीक है</string>
+    <string name="areusure">पक्का ?</string>
+    <string name="proceed">आगे बढ़ना</string>
+    <string name="cancel">रद्द करें</string>
 
 
 </resources>

@@ -19,4 +19,7 @@
     <string name="delete">Delete</string>
     <string name="contact_details">Contact Details</string>
     <string name="ok_tv">OK</string>
+    <string name="areusure">Are u sure ?</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
 </resources>

@@ -48,15 +48,15 @@ class ContactsScreen : AppCompatActivity() {
                      * alert dialog
                      * */
                     val builder = AlertDialog.Builder(this)
-                    builder.setTitle("Delete Forever")
-                        .setMessage("Are you Sure ?")
+                    builder.setTitle(R.string.deleteFor)
+                        .setMessage(R.string.areusure)
                         .setCancelable(false)
                         .setIcon(android.R.drawable.ic_delete)
 
-                    builder.setPositiveButton("Proceed") { dialogInterface, which ->
+                    builder.setPositiveButton(R.string.proceed) { dialogInterface, which ->
                         Toast.makeText(applicationContext, "Deleting...", Toast.LENGTH_LONG).show()
                     }
-                    builder.setNegativeButton("Cancel") { dialogInterface, which ->
+                    builder.setNegativeButton(R.string.cancel) { dialogInterface, which ->
                         Toast.makeText(applicationContext, "Cancelling...", Toast.LENGTH_LONG)
                             .show()
                     }
